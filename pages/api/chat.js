@@ -1,6 +1,12 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { fetchTips } from "../../lib/notion";
 
+export const config = {
+  api: {
+    responseLimit: false,
+  },
+};
+
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // TIPSをキャッシュ（10分）
@@ -75,8 +81,10 @@ ${tips}`;
   const chat = model.startChat({ history });
 
   res.setHeader("Content-Type", "text/event-stream");
-  res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("Cache-Control", "no-cache, no-transform");
   res.setHeader("Connection", "keep-alive");
+  res.setHeader("X-Accel-Buffering", "no");
+  res.flushHeaders();
 
   try {
     const result = await chat.sendMessageStream(lastMessage);
