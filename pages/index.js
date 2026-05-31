@@ -93,7 +93,7 @@ export default function Home() {
       <main className="chat-area">
         {messages.map((msg, i) => (
           <div key={i} className={`bubble-wrap ${msg.role}`}>
-            {msg.role === "assistant" && <div className="avatar">LP</div>}
+            {msg.role === "assistant" && <div className="avatar">れお</div>}
             <div className={`bubble ${msg.role}`}>
               {msg.content.split("\n").map((line, j) => (
                 <span key={j}>
@@ -168,7 +168,7 @@ export default function Home() {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 700;
           flex-shrink: 0;
         }
