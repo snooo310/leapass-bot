@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 const INITIAL_MESSAGE = {
   role: "assistant",
   content:
-    "こんにちは！LeaPASSのAIアシスタントです。\nTOEICに関することなら、なんでも聞いてください！\n\n例)\n・「Part5を速く解くコツは？」\n・「シャドーイングのやり方を教えて」\n・「700点台から900点を目指すには？」\n・「れおってどんな人？」",
+    "こんにちは、れおです🐨\nTOEICに関することなら、なんでも聞いてください！\n\n例)\n・「Part5を速く解くコツは？」\n・「シャドーイングのやり方を教えて」\n・「700点台から900点を目指すには？」",
 };
 
 export default function Home() {
