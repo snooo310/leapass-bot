@@ -20,6 +20,11 @@ export default function Tokuten() {
       thumb: "/thumb4.png",
       url: "https://htmlpreview.github.io/?https://gist.githubusercontent.com/snooo310/820df2a767091e3cf468a8c5564f91a3/raw/paraphrase_app.html",
     },
+    {
+      title: "お悩みチェックアップ",
+      thumb: "/thumb5.png",
+      url: "https://htmlpreview.github.io/?https://gist.githubusercontent.com/snooo310/418638604c97021c16527e2f971d46f2/raw/diagnosis_tool.html",
+    },
   ];
 
   return (
