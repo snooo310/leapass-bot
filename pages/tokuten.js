@@ -25,6 +25,11 @@ export default function Tokuten() {
       thumb: "/thumb5.png",
       url: "https://htmlpreview.github.io/?https://gist.githubusercontent.com/snooo310/418638604c97021c16527e2f971d46f2/raw/diagnosis_tool.html",
     },
+    {
+      title: "TOEICとは？",
+      thumb: "/thumb6.png",
+      url: "https://www.loom.com/share/006296e36dfc4b85a555a86e623337da",
+    },
   ];
 
   return (
