@@ -30,6 +30,11 @@ export default function Tokuten() {
       thumb: "/thumb6.png",
       url: "https://www.loom.com/share/006296e36dfc4b85a555a86e623337da",
     },
+    {
+      title: "Englishターゲットプランナー",
+      thumb: "/thumb7.png",
+      url: "https://htmlpreview.github.io/?https://gist.githubusercontent.com/snooo310/b6a0cc882c47dc3e55e55142985f4bae/raw/roadmap_tool.html",
+    },
   ];
 
   return (
